@@ -2,7 +2,7 @@ import { Result } from '@/request/Result'
 import { get, post, del, put } from '@/request/index'
 import { type Ref } from 'vue'
 
-const prefix = '/license'
+const prefix = '/license1'
 
 /**
  * 获得license信息

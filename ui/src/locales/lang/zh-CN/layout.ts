@@ -15,7 +15,7 @@ export default {
     serialNo: '序列号',
     remark: '备注',
     update: '更新',
-    authorize: '授权给'
+    authorize: '授权1234给'
   },
   time: {
     daysLater: '天后',
@@ -23,5 +23,5 @@ export default {
     expired: '已过期',
     expiringSoon: '即将到期'
   },
-  copyright: '版权所有 © 2014-2025 杭州飞致云信息科技有限公司'
+  copyright: '版权所有 © '
 }

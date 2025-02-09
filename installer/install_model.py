@@ -11,7 +11,7 @@ import os.path
 from pycrawlers import huggingface
 from transformers import GPT2TokenizerFast
 hg = huggingface()
-prefix_dir = "./model"
+prefix_dir = "/opt/maxkb/model"
 model_config = [
     {
         'download_params': {
@@ -67,3 +67,4 @@ def install():
 
 if __name__ == '__main__':
     install()
+

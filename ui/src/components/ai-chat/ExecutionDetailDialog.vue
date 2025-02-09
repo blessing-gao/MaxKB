@@ -388,7 +388,7 @@
                     </div>
                   </template>
 
-                  <!-- 函数库 -->
+                  <!-- 插件库 -->
                   <template
                     v-if="
                       item.type === WorkflowType.FunctionLib ||

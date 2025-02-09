@@ -489,11 +489,11 @@ msgstr "变量值"
 
 #: .\apps\application\flow\step_node\function_lib_node\i_function_lib_node.py:27
 msgid "Library ID"
-msgstr "函数库id"
+msgstr "插件库id"
 
 #: .\apps\application\flow\step_node\function_lib_node\i_function_lib_node.py:35
-msgid "The function has been deleted"
-msgstr "函数已被删除"
+msgid "The library has been deleted"
+msgstr "插件库已被删除"
 
 #: .\apps\application\flow\step_node\function_node\i_function_node.py:25
 msgid "Is this field required"
@@ -611,12 +611,12 @@ msgstr "节点{node} 不可用"
 #: .\apps\application\flow\workflow_manage.py:165
 #, python-brace-format
 msgid "The library ID of node {node} cannot be empty"
-msgstr "节点{node} 函数库id不能为空"
+msgstr "节点{node} 插件库id不能为空"
 
 #: .\apps\application\flow\workflow_manage.py:168
 #, python-brace-format
 msgid "The function library for node {node} is not available"
-msgstr "节点{node} 函数库不可用"
+msgstr "节点{node} 插件库不可用"
 
 #: .\apps\application\flow\workflow_manage.py:174
 msgid "Basic information node is required"
@@ -854,7 +854,7 @@ msgid ""
 "The community version supports up to 5 applications. If you need more "
 "applications, please contact us (https://fit2cloud.com/)."
 msgstr ""
-"社区版最多支持 5 个应用，如需拥有更多应用，请联系我们（https://"
+"最多支持 5 个应用，如需拥有更多应用，请联系我们（https://"
 "fit2cloud.com/）"
 
 #: .\apps\application\serializers\application_serializers.py:572
@@ -1756,12 +1756,12 @@ msgstr "获取模型参数表单"
 #: .\apps\application\views\application_views.py:241
 #: .\apps\application\views\application_views.py:242
 msgid "Get a list of function libraries"
-msgstr "获取函数库列表"
+msgstr "获取插件库列表"
 
 #: .\apps\application\views\application_views.py:259
 #: .\apps\application\views\application_views.py:260
 msgid "Get library details"
-msgstr "获取函数库详情"
+msgstr "获取插件库详情"
 
 #: .\apps\application\views\application_views.py:278
 #: .\apps\application\views\application_views.py:279
@@ -2719,7 +2719,7 @@ msgid ""
 "The community version supports up to 50 knowledge bases. If you need more "
 "knowledge bases, please contact us (https://fit2cloud.com/)."
 msgstr ""
-"社区版最多支持 50 个知识库，如需拥有更多知识库，请联系我们（https://"
+"最多支持 50 个知识库，如需拥有更多知识库，请联系我们（https://"
 "fit2cloud.com/）。"
 
 #: .\apps\dataset\serializers\dataset_serializers.py:424
@@ -3698,7 +3698,7 @@ msgstr "语音合成"
 
 #: .\apps\setting\models_provider\base_model_provider.py:156
 msgid "Vision Model"
-msgstr "视觉模型"
+msgstr "图片理解"
 
 #: .\apps\setting\models_provider\base_model_provider.py:157
 msgid "Image Generation"
@@ -5665,7 +5665,7 @@ msgid ""
 "The community version supports up to 2 users. If you need more users, please "
 "contact us (https://fit2cloud.com/)."
 msgstr ""
-"社区版最多支持 2 个用户，如需拥有更多用户，请联系我们（https://"
+"最多支持 2 个用户，如需拥有更多用户，请联系我们（https://"
 "fit2cloud.com/）。"
 
 #: .\apps\setting\serializers\valid_serializers.py:41

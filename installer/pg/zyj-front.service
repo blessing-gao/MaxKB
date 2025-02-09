@@ -1,0 +1,15 @@
+[Unit]
+Description=ZYJ Frontend Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/hdubots/ui
+ExecStart=/root/miniconda3/bin/npm run dev
+Environment=PATH=/root/miniconda3/bin:/usr/bin:/bin:/usr/local/bin:$PATH
+Environment=NODE_ENV=development
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target

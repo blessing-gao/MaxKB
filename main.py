@@ -81,7 +81,7 @@ def dev():
 
 
 if __name__ == '__main__':
-    os.environ['HF_HOME'] = '/opt/maxkb/model/base'
+    os.environ['HF_HOME'] = './model/base'
     parser = argparse.ArgumentParser(
         description="""
            qabot service control tools;

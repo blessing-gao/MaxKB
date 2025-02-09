@@ -373,6 +373,7 @@ function getList() {
 }
 
 function getUserList() {
+  console.log("APPLICATION")
   applicationApi.getUserList('APPLICATION', loading).then((res) => {
     if (res.data) {
       userOptions.value = res.data.map((item: any) => {

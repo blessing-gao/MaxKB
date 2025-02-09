@@ -1,2 +1,8 @@
 .git*
 .idea*
+ui/node_modules
+tmp
+venv
+data
+package-lock.json
+poetry.lock

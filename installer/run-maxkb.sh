@@ -1,10 +1,14 @@
 #!/bin/bash
-rm -f /opt/maxkb/app/tmp/*.pid
-# Start postgresql
-docker-entrypoint.sh postgres -c max_connections=${POSTGRES_MAX_CONNECTIONS} &
-sleep 10
-# Wait postgresql
-until pg_isready --host=127.0.0.1; do sleep 1 && echo "waiting for postgres"; done
 
-# Start MaxKB
+# Clean up any old pid files
+rm -f /opt/maxkb/app/tmp/*.pid
+
+# Ensure PostgreSQL is ready (you can skip pg_isready if it's not needed)
+# If needed, adjust the host and port to match the external PostgreSQL setup.
+until pg_isready --host=${MAXKB_DB_HOST} --port=${MAXKB_DB_PORT}; do
+  sleep 1
+  echo "waiting for postgres"
+done
+
+# Start MaxKB application
 python /opt/maxkb/app/main.py start

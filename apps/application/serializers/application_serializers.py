@@ -506,9 +506,9 @@ class ApplicationSerializer(serializers.Serializer):
     class Create(serializers.Serializer):
         user_id = serializers.UUIDField(required=True, error_messages=ErrMessage.uuid(_("User ID")))
 
-        @valid_license(model=Application, count=5,
-                       message=_(
-                           'The community version supports up to 5 applications. If you need more applications, please contact us (https://fit2cloud.com/).'))
+        #@valid_license(model=Application, count=5,
+        #               message=_(
+        #                   'The community version supports up to 5 applications. If you need more applications, please contact us (https://fit2cloud.com/).'))
         @transaction.atomic
         def insert(self, application: Dict):
             application_type = application.get('type')
@@ -713,9 +713,9 @@ class ApplicationSerializer(serializers.Serializer):
         file = UploadedFileField(required=True, error_messages=ErrMessage.image(_("file")))
         user_id = serializers.UUIDField(required=True, error_messages=ErrMessage.uuid(_("User ID")))
 
-        @valid_license(model=Application, count=5,
-                       message=_(
-                           'The community version supports up to 5 applications. If you need more applications, please contact us (https://fit2cloud.com/).'))
+        #@valid_license(model=Application, count=5,
+        #               message=_(
+        #                   'The community version supports up to 5 applications. If you need more applications, please contact us (https://fit2cloud.com/).'))
         @transaction.atomic
         def import_(self, with_valid=True):
             if with_valid:
@@ -775,7 +775,7 @@ class ApplicationSerializer(serializers.Serializer):
             """
 
             @param user_id: 用户id
-            @param function_lib: 函数库
+            @param function_lib: 插件库
             @return:
             """
             return FunctionLib(id=function_lib.get('id'), user_id=user_id, name=function_lib.get('name'),

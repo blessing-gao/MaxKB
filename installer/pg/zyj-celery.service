@@ -1,0 +1,15 @@
+[Unit]
+Description=ZYJ Celery Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/hdubots
+ExecStart=/bin/bash -c "source /root/miniconda3/etc/profile.d/conda.sh && conda activate hdubots && source venv/bin/activate && python /root/hdubots/main.py dev celery"
+
+Restart=always
+
+User=root
+
+[Install]
+WantedBy=multi-user.target

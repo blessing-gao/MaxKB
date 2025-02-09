@@ -5,7 +5,7 @@ import { type Ref } from 'vue'
 const prefix = '/application'
 
 /**
- * 替换社区版-获取AccessToken
+ * 替换-获取AccessToken
  * @param 参数 application_id
  */
 const getAccessToken: (application_id: string, loading?: Ref<boolean>) => Promise<Result<any>> = (
@@ -16,7 +16,7 @@ const getAccessToken: (application_id: string, loading?: Ref<boolean>) => Promis
 }
 
 /**
- * 替换社区版-修改AccessToken
+ * 替换-修改AccessToken
  * @param 参数 application_id
  * data {
  *  "show_source": boolean,
