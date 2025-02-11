@@ -1,0 +1,43 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # 使用合适的 Node.js 版本
+
+      # Step 3: Install dependencies and build UI
+      - name: Install dependencies and build UI
+        working-directory: ./ui  # 确保切换到正确的目录
+        run: |
+          npm install
+          npm run build
+
+      # Step 4: Build Docker image
+      - name: Build Docker image
+        run: |
+          docker build -t wei-woyonzhe-docker.pkg.coding.net/zheyin/document/hdu-bot .
+
+      # Step 5: Log in to Coding Docker registry using credentials
+      - name: Log in to Coding Docker registry
+        run: |
+          echo $CODING_PASSWORD | docker login wei-woyonzhe-docker.pkg.coding.net -u $CODING_USERNAME --password-stdin
+
+      # Step 6: Push Docker image to Coding registry
+      - name: Push Docker image
+        run: |
+          docker push wei-woyonzhe-docker.pkg.coding.net/zheyin/document/hdu-bot
