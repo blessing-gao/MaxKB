@@ -16,7 +16,7 @@ def get_data_by_default_cache(key: str, get_data, cache_instance=cache, version=
     获取数据, 先从缓存中获取,如果获取不到再调用get_data 获取数据
     @param kwargs:          get_data所需参数
     @param key:             key
-    @param get_data:        获取数据函数
+    @param get_data:        获取数据插件
     @param cache_instance:  cache实例
     @param version:         版本用于隔离
     @return:

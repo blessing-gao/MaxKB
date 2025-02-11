@@ -1,8 +1,8 @@
 export default {
-  title: '应用',
-  createApplication: '创建应用',
-  importApplication: '导入应用',
-  copyApplication: '复制应用',
+  title: '智能体',
+  createApplication: '创建智能体',
+  importApplication: '导入智能体',
+  copyApplication: '复制智能体',
   workflow: '高级编排',
   simple: '简单配置',
   searchBar: {
@@ -12,12 +12,12 @@ export default {
     demo: '演示'
   },
   delete: {
-    confirmTitle: '是否删除应用：',
-    confirmMessage: '删除后该应用将不再提供服务，请谨慎操作。'
+    confirmTitle: '是否删除智能体：',
+    confirmMessage: '删除后该智能体将不再提供服务，请谨慎操作。'
   },
   tip: {
     ExportError: '导出失败',
-    professionalMessage: '最多支持 5 个应用，如需拥有更多应用，请升级为专业版。',
+    professionalMessage: '最多支持 5 个智能体，如需拥有更多智能体，请升级为专业版。',
     saveErrorMessage: '保存失败，请检查输入或稍后再试',
     loadingErrorMessage: '加载配置失败，请检查输入或稍后再试'
   },
@@ -28,16 +28,16 @@ export default {
     },
     form: {
       appName: {
-        label: '应用名称',
-        placeholder: '请输入应用名称',
-        requiredMessage: '请输入应用名称'
+        label: '智能体名称',
+        placeholder: '请输入智能体名称',
+        requiredMessage: '请输入智能体名称'
       },
       appDescription: {
-        label: '应用描述',
-        placeholder: '描述该应用的应用场景及用途，如：XXX 小助手回答用户提出的 XXX 产品使用问题'
+        label: '智能体描述',
+        placeholder: '描述该智能体的应用场景及用途，如：XXX 小助手回答用户提出的 XXX 产品使用问题'
       },
       appType: {
-        label: '选择应用类型',
+        label: '选择智能体类型',
         simplePlaceholder: '适合新手创建小助手',
         workflowPlaceholder: '适合高级用户自定义小助手的工作流'
       },
@@ -166,7 +166,7 @@ export default {
       tokenPlaceholder: '请输入Token',
       encodingAesKeyPlaceholder: '请输入EncodingAESKey',
       authenticationSuccessful: '认证成功',
-      urlInfo: '-应用管理-自建-创建的应用-接收消息-设置 API 接收的 "URL" 中'
+      urlInfo: '-智能体管理-自建-创建的智能体-接收消息-设置 API 接收的 "URL" 中'
     },
     dingtalkSetting: {
       title: '钉钉应用配置',

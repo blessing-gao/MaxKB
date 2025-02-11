@@ -23,7 +23,7 @@ class PermissionType(models.TextChoices):
 class FunctionLib(AppModelMixin):
     id = models.UUIDField(primary_key=True, max_length=128, default=uuid.uuid1, editable=False, verbose_name="主键id")
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="用户id")
-    name = models.CharField(max_length=64, verbose_name="函数名称")
+    name = models.CharField(max_length=64, verbose_name="插件名称")
     desc = models.CharField(max_length=128, verbose_name="描述")
     code = models.CharField(max_length=102400, verbose_name="python代码")
     input_field_list = ArrayField(verbose_name="输入字段列表",

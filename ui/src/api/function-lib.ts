@@ -7,7 +7,7 @@ import { type Ref } from 'vue'
 const prefix = '/function_lib'
 
 /**
- * 获取函数列表
+ * 获取插件列表
  * param {
           "name": "string",
         }
@@ -20,7 +20,7 @@ const getAllFunctionLib: (param?: any, loading?: Ref<boolean>) => Promise<Result
 }
 
 /**
- * 获取分页函数列表
+ * 获取分页插件列表
  * page {
           "current_page": "string",
           "page_size": "string",
@@ -38,7 +38,7 @@ const getFunctionLib: (
 }
 
 /**
- * 创建函数
+ * 创建插件
  * @param 参数
  */
 const postFunctionLib: (data: functionLibData, loading?: Ref<boolean>) => Promise<Result<any>> = (
@@ -49,7 +49,7 @@ const postFunctionLib: (data: functionLibData, loading?: Ref<boolean>) => Promis
 }
 
 /**
- * 修改函数
+ * 修改插件
  * @param 参数 
 
  */
@@ -62,7 +62,7 @@ const putFunctionLib: (
 }
 
 /**
- * 调试函数
+ * 调试插件
  * @param 参数 
 
  */
@@ -74,7 +74,7 @@ const postFunctionLibDebug: (data: any, loading?: Ref<boolean>) => Promise<Resul
 }
 
 /**
- * 删除函数
+ * 删除插件
  * @param 参数 function_lib_id
  */
 const delFunctionLib: (
@@ -84,10 +84,10 @@ const delFunctionLib: (
   return del(`${prefix}/${function_lib_id}`, undefined, {}, loading)
 }
 /**
- * 获取函数详情
- * @param function_lib_id 函数id
+ * 获取插件详情
+ * @param function_lib_id 插件id
  * @param loading 加载器
- * @returns 函数详情
+ * @returns 插件详情
  */
 const getFunctionLibById: (
   function_lib_id: String,

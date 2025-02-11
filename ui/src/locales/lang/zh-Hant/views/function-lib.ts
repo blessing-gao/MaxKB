@@ -58,7 +58,7 @@ export default {
       param: {
         paramInfo1: '使用函數時顯示',
         paramInfo2: '使用函數時不顯示',
-        code: '函数内容（Python）',
+        code: '插件内容（Python）',
         selectPlaceholder: '請选择參數',
         inputPlaceholder: '請輸入參數值',
       },

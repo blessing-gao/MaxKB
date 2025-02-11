@@ -135,7 +135,7 @@ interface FormField {
    */
   relation_show_field_dict?: Dict<Array<any>>
   /**
-   * {field:field_value_list} 表示在 field有值 ,并且值在field_value_list中才 执行函数获取 数据
+   * {field:field_value_list} 表示在 field有值 ,并且值在field_value_list中才 执行插件获取 数据
    */
   relation_trigger_field_dict?: Dict<Array<any>>
   /**
@@ -167,7 +167,7 @@ interface FormField {
    */
   provider?: string
   /**
-   * 执行函数
+   * 执行插件
    */
   method?: string
 

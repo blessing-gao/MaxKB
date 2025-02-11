@@ -15,9 +15,9 @@ from django.utils.translation import gettext_lazy as _
 
 
 class TriggerType(Enum):
-    # 执行函数获取 OptionList数据
+    # 执行插件获取 OptionList数据
     OPTION_LIST = 'OPTION_LIST'
-    # 执行函数获取子表单
+    # 执行插件获取子表单
     CHILD_FORMS = 'CHILD_FORMS'
 
 
@@ -38,7 +38,7 @@ class BaseField:
         :param label: 提示
         :param default_value: 默认值
         :param relation_show_field_dict:        {field:field_value_list} 表示在 field有值 ,并且值在field_value_list中才显示
-        :param relation_trigger_field_dict:     {field:field_value_list} 表示在 field有值 ,并且值在field_value_list中才 执行函数获取 数据
+        :param relation_trigger_field_dict:     {field:field_value_list} 表示在 field有值 ,并且值在field_value_list中才 执行插件获取 数据
         :param trigger_type:                    执行器类型  OPTION_LIST请求Option_list数据 CHILD_FORMS请求子表单
         :param attrs:                           前端attr数据
         :param props_info:                      其他额外信息
@@ -135,11 +135,11 @@ class BaseExecField(BaseField):
         :param text_field:  文本字段
         :param value_field: 值字段
         :param provider:    指定供应商
-        :param method:      执行供应商函数 method
+        :param method:      执行供应商插件 method
         :param required:    是否必填
         :param default_value: 默认值
         :param relation_show_field_dict:        {field:field_value_list} 表示在 field有值 ,并且值在field_value_list中才显示
-        :param relation_trigger_field_dict:     {field:field_value_list} 表示在 field有值 ,并且值在field_value_list中才 执行函数获取 数据
+        :param relation_trigger_field_dict:     {field:field_value_list} 表示在 field有值 ,并且值在field_value_list中才 执行插件获取 数据
         :param trigger_type:                    执行器类型  OPTION_LIST请求Option_list数据 CHILD_FORMS请求子表单
         :param attrs:                           前端attr数据
         :param props_info:                      其他额外信息

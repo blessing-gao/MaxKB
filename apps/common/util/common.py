@@ -46,10 +46,10 @@ def query_params_to_single_dict(query_params: Dict):
 
 def get_exec_method(clazz_: str, method_: str):
     """
-    根据 class 和method函数 获取执行函数
+    根据 class 和method插件 获取执行插件
     :param clazz_:   class 字符串
-    :param method_:  执行函数
-    :return: 执行函数
+    :param method_:  执行插件
+    :return: 执行插件
     """
     clazz_split = clazz_.split('.')
     clazz_name = clazz_split[-1]

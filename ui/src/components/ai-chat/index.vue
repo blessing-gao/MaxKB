@@ -192,7 +192,7 @@ function getChartOpenId(chat?: any, problem?: string, re_chat?: boolean, other_p
 }
 
 /**
- * 获取一个递归函数,处理流式数据
+ * 获取一个递归插件,处理流式数据
  * @param chat    每一条对话记录
  * @param reader  流数据
  * @param stream  是否是流式数据

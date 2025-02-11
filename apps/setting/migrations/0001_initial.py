@@ -58,9 +58,9 @@ class Migration(migrations.Migration):
                 ('id', models.UUIDField(default=uuid.uuid1, editable=False, primary_key=True, serialize=False,
                                         verbose_name='主键id')),
                 ('auth_target_type',
-                 models.CharField(choices=[('DATASET', '数据集'), ('APPLICATION', '应用')], default='DATASET',
+                 models.CharField(choices=[('DATASET', '数据集'), ('APPLICATION', '智能体')], default='DATASET',
                                   max_length=128, verbose_name='授权目标')),
-                ('target', models.UUIDField(verbose_name='数据集/应用id')),
+                ('target', models.UUIDField(verbose_name='数据集/智能体id')),
                 ('operate', django.contrib.postgres.fields.ArrayField(
                     base_field=models.CharField(blank=True, choices=[('MANAGE', '管理'), ('USE', '使用')],
                                                 default='USE', max_length=256), size=None,

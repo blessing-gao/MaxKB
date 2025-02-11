@@ -10,7 +10,7 @@ export default {
           const style = (document.defaultView as any).getComputedStyle(el)
           // 如果当前长宽和历史长宽不同
           if (width !== style.width || height !== style.height) {
-            // binding.value在这里就是下面的resizeChart函数
+            // binding.value在这里就是下面的resizeChart插件
 
             binding.value({
               width: parseFloat(style.width),

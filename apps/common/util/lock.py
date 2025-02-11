@@ -34,9 +34,9 @@ def un_lock(key: str):
 
 def lock(lock_key):
     """
-    给一个函数上锁
-    :param lock_key: 上锁key 字符串|函数  函数返回值为字符串
-    :return: 装饰器函数 当前装饰器主要限制一个key只能一个线程去调用 相同key只能阻塞等待上一个任务执行完毕 不同key不需要等待
+    给一个插件上锁
+    :param lock_key: 上锁key 字符串|插件  插件返回值为字符串
+    :return: 装饰器插件 当前装饰器主要限制一个key只能一个线程去调用 相同key只能阻塞等待上一个任务执行完毕 不同key不需要等待
     """
 
     def inner(func):

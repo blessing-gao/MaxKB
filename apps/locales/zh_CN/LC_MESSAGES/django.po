@@ -150,7 +150,7 @@ msgstr "消息类型错误"
 msgid ""
 "Sorry, the AI model is not configured. Please go to the application to set "
 "up the AI model first."
-msgstr "抱歉，没有配置 AI 模型，请先去应用中设置 AI 模型。"
+msgstr "抱歉，没有配置 AI 模型，请先去智能体中设置 AI 模型。"
 
 #: .\apps\application\chat_pipeline\step\generate_human_message_step\i_generate_human_message_step.py:27
 #: .\apps\application\chat_pipeline\step\reset_problem_step\i_reset_problem_step.py:25
@@ -363,7 +363,7 @@ msgstr "内容类型"
 #: .\apps\xpack\serializers\platform_serializer.py:106
 #: .\apps\xpack\views\platform.py:75 .\apps\xpack\views\platform.py:91
 msgid "Application ID"
-msgstr "应用 ID"
+msgstr "智能体 ID"
 
 #: .\apps\application\flow\step_node\application_node\i_application_node.py:15
 msgid "API Input Fields"
@@ -536,7 +536,7 @@ msgstr "{field}, 此字段为必填项。"
 
 #: .\apps\application\flow\step_node\function_node\i_function_node.py:46
 msgid "function"
-msgstr "函数"
+msgstr "插件"
 
 #: .\apps\application\flow\step_node\image_generate_step_node\i_image_generate_node.py:15
 msgid "Prompt word (positive)"
@@ -686,7 +686,7 @@ msgstr "无引用分段提示词"
 #: .\apps\application\swagger_api\application_api.py:330
 #: .\apps\application\swagger_api\application_api.py:375
 msgid "Application Name"
-msgstr "应用名称"
+msgstr "智能体名称"
 
 #: .\apps\application\serializers\application_serializers.py:150
 #: .\apps\application\serializers\application_serializers.py:473
@@ -699,7 +699,7 @@ msgstr "应用名称"
 #: .\apps\application\swagger_api\application_api.py:332
 #: .\apps\application\swagger_api\application_api.py:380
 msgid "Application Description"
-msgstr "应用描述"
+msgstr "智能体描述"
 
 #: .\apps\application\serializers\application_serializers.py:151
 msgid "Workflow Objects"
@@ -721,11 +721,11 @@ msgstr "开场白"
 #: .\apps\dataset\serializers\dataset_serializers.py:105
 #: .\apps\dataset\serializers\dataset_serializers.py:106
 msgid "application name"
-msgstr "应用名称"
+msgstr "智能体名称"
 
 #: .\apps\application\serializers\application_serializers.py:208
 msgid "application describe"
-msgstr "应用描述"
+msgstr "智能体描述"
 
 #: .\apps\application\serializers\application_serializers.py:210
 #: .\apps\application\serializers\application_serializers.py:475
@@ -752,11 +752,11 @@ msgstr "问题补全"
 #: .\apps\application\swagger_api\application_api.py:203
 #: .\apps\application\swagger_api\application_api.py:348
 msgid "Application Type"
-msgstr "应用类型"
+msgstr "智能体类型"
 
 #: .\apps\application\serializers\application_serializers.py:234
 msgid "Application type only supports SIMPLE|WORK_FLOW"
-msgstr "应用类型只支持 SIMPLE|WORK_FLOW"
+msgstr "智能体类型只支持 SIMPLE|WORK_FLOW"
 
 #: .\apps\application\serializers\application_serializers.py:238
 #: .\apps\application\serializers\application_serializers.py:497
@@ -854,7 +854,7 @@ msgid ""
 "The community version supports up to 5 applications. If you need more "
 "applications, please contact us (https://fit2cloud.com/)."
 msgstr ""
-"最多支持 5 个应用，如需拥有更多应用，请联系我们（https://"
+"最多支持 5 个智能体，如需拥有更多智能体，请联系我们（https://"
 "fit2cloud.com/）"
 
 #: .\apps\application\serializers\application_serializers.py:572
@@ -873,7 +873,7 @@ msgstr "相似度"
 #: .\apps\application\serializers\application_serializers.py:694
 #: .\apps\application\serializers\application_serializers.py:786
 msgid "Application id does not exist"
-msgstr "应用 ID 不存在"
+msgstr "智能体 ID 不存在"
 
 #: .\apps\application\serializers\application_serializers.py:617
 msgid "Select User ID"
@@ -927,7 +927,7 @@ msgstr "用户没有使用该模型:{model_name}的权限"
 #: .\apps\xpack\serializers\platform_serializer.py:165
 #: .\apps\xpack\serializers\platform_serializer.py:176
 msgid "Application does not exist"
-msgstr "应用不存在"
+msgstr "智能体不存在"
 
 #: .\apps\application\serializers\application_serializers.py:1246
 #: .\apps\application\swagger_api\chat_api.py:385
@@ -1089,7 +1089,7 @@ msgstr "对话记录不存在"
 #: .\apps\application\serializers\chat_message_serializers.py:428
 #: .\apps\application\serializers\chat_serializers.py:297
 msgid "The application has not been published. Please use it after publishing."
-msgstr "应用未发布，请发布后使用"
+msgstr "智能体未发布，请发布后使用"
 
 #: .\apps\application\serializers\chat_serializers.py:54
 msgid "node"
@@ -1161,7 +1161,7 @@ msgstr "关联数据集"
 
 #: .\apps\application\serializers\chat_serializers.py:432
 msgid "Application authentication information does not exist"
-msgstr "不存在的应用认证信息"
+msgstr "不存在的智能体认证信息"
 
 #: .\apps\application\serializers\chat_serializers.py:434
 msgid "Displaying knowledge sources is not enabled"
@@ -1249,7 +1249,7 @@ msgstr "上传文件"
 #: .\apps\application\swagger_api\application_api.py:35
 #: .\apps\application\swagger_api\application_api.py:36
 msgid "Application authentication token"
-msgstr "应用认证 token"
+msgstr "智能体认证 token"
 
 #: .\apps\application\swagger_api\application_api.py:48
 #: .\apps\application\swagger_api\application_version_api.py:22
@@ -1313,7 +1313,7 @@ msgstr "模型类型"
 
 #: .\apps\application\swagger_api\application_api.py:117
 msgid "Application api_key id"
-msgstr "应用 api_key id"
+msgstr "智能体 api_key id"
 
 #: .\apps\application\swagger_api\application_api.py:126
 #: .\apps\application\swagger_api\application_api.py:127
@@ -1335,7 +1335,7 @@ msgstr "是否开启问题优化"
 #: .\apps\application\swagger_api\application_api.py:204
 #: .\apps\application\swagger_api\application_api.py:349
 msgid "Application Type   SIMPLE |  WORK_FLOW"
-msgstr "应用类型   SIMPLE |  WORK_FLOW"
+msgstr "智能体类型   SIMPLE |  WORK_FLOW"
 
 #: .\apps\application\swagger_api\application_api.py:207
 #: .\apps\application\swagger_api\application_api.py:208
@@ -1470,7 +1470,7 @@ msgstr "工作流数据"
 
 #: .\apps\application\swagger_api\application_version_api.py:61
 msgid "Application version id"
-msgstr "应用版本 id"
+msgstr "智能体版本 id"
 
 #: .\apps\application\swagger_api\chat_api.py:33
 #: .\apps\application\swagger_api\chat_api.py:34
@@ -1537,7 +1537,7 @@ msgstr "修改时间"
 
 #: .\apps\application\swagger_api\chat_api.py:135
 msgid "Application ID, pass when modifying, do not pass when creating"
-msgstr "应用id,修改的时候传,创建的时候不传"
+msgstr "智能体id,修改的时候传,创建的时候不传"
 
 #: .\apps\application\swagger_api\chat_api.py:136
 msgid "Model ID"
@@ -1651,29 +1651,29 @@ msgstr "命中数量"
 #: .\apps\application\views\application_views.py:465
 #: .\apps\application\views\application_views.py:466
 msgid "Get the application list"
-msgstr "获取应用列表"
+msgstr "获取智能体列表"
 
 #: .\apps\application\views\application_version_views.py:31
 #: .\apps\application\views\application_version_views.py:48
 #: .\apps\application\views\application_version_views.py:65
 #: .\apps\application\views\application_version_views.py:79
 msgid "Application/Version"
-msgstr "应用/版本"
+msgstr "智能体/版本"
 
 #: .\apps\application\views\application_version_views.py:43
 #: .\apps\application\views\application_version_views.py:44
 msgid "Get the list of application versions by page"
-msgstr "获取应用版本列表分页"
+msgstr "获取智能体版本列表分页"
 
 #: .\apps\application\views\application_version_views.py:61
 #: .\apps\application\views\application_version_views.py:62
 msgid "Get application version details"
-msgstr "获取应用版本详情"
+msgstr "获取智能体版本详情"
 
 #: .\apps\application\views\application_version_views.py:74
 #: .\apps\application\views\application_version_views.py:75
 msgid "Modify application version information"
-msgstr "修改应用版本信息"
+msgstr "修改智能体版本信息"
 
 #: .\apps\application\views\application_views.py:40
 #: .\apps\application\views\application_views.py:41
@@ -1685,7 +1685,7 @@ msgstr "用户统计"
 #: .\apps\application\views\application_views.py:91
 #: .\apps\application\views\application_views.py:116
 msgid "Application/Statistics"
-msgstr "应用/统计"
+msgstr "智能体/统计"
 
 #: .\apps\application\views\application_views.py:65
 #: .\apps\application\views\application_views.py:66
@@ -1705,7 +1705,7 @@ msgstr "对话相关统计趋势"
 #: .\apps\application\views\application_views.py:144
 #: .\apps\application\views\application_views.py:145
 msgid "Modify application icon"
-msgstr "修改应用图标"
+msgstr "修改智能体图标"
 
 #: .\apps\application\views\application_views.py:146
 #: .\apps\application\views\application_views.py:168
@@ -1727,15 +1727,15 @@ msgstr "修改应用图标"
 #: .\apps\application\views\application_views.py:604
 #: .\apps\application\views\application_views.py:637
 msgid "Application"
-msgstr "应用"
+msgstr "智能体"
 
 #: .\apps\application\views\application_views.py:166
 msgid "Import Application"
-msgstr "导入应用"
+msgstr "导入智能体"
 
 #: .\apps\application\views\application_views.py:179
 msgid "Export Application"
-msgstr "导出应用"
+msgstr "导出智能体"
 
 #: .\apps\application\views\application_views.py:191
 #: .\apps\application\views\application_views.py:192
@@ -1766,7 +1766,7 @@ msgstr "获取插件库详情"
 #: .\apps\application\views\application_views.py:278
 #: .\apps\application\views\application_views.py:279
 msgid "Get the list of apps created by the current user"
-msgstr "获取当前用户创建的应用列表"
+msgstr "获取当前用户创建的智能体列表"
 
 #: .\apps\application\views\application_views.py:280
 #: .\apps\application\views\application_views.py:317
@@ -1776,17 +1776,17 @@ msgstr "获取当前用户创建的应用列表"
 #: .\apps\application\views\chat_views.py:115
 #: .\apps\application\views\chat_views.py:319
 msgid "Application/Chat"
-msgstr "应用/对话"
+msgstr "智能体/对话"
 
 #: .\apps\application\views\application_views.py:296
 #: .\apps\application\views\application_views.py:297
 msgid "Get application data"
-msgstr "获取应用数据"
+msgstr "获取智能体数据"
 
 #: .\apps\application\views\application_views.py:315
 #: .\apps\application\views\application_views.py:316
 msgid "Get application related information"
-msgstr "获取应用相关信息"
+msgstr "获取智能体相关信息"
 
 #: .\apps\application\views\application_views.py:329
 #: .\apps\application\views\application_views.py:330
@@ -1798,51 +1798,51 @@ msgstr "添加 ApiKey"
 #: .\apps\application\views\application_views.py:364
 #: .\apps\application\views\application_views.py:382
 msgid "Application/API_KEY"
-msgstr "应用/API_KEY"
+msgstr "智能体/API_KEY"
 
 #: .\apps\application\views\application_views.py:344
 #: .\apps\application\views\application_views.py:345
 msgid "Get the application API_KEY list"
-msgstr "获取应用 API_KEY 列表"
+msgstr "获取智能体 API_KEY 列表"
 
 #: .\apps\application\views\application_views.py:362
 #: .\apps\application\views\application_views.py:363
 msgid "Modify application API_KEY"
-msgstr "修改应用 API_KEY"
+msgstr "修改智能体 API_KEY"
 
 #: .\apps\application\views\application_views.py:380
 #: .\apps\application\views\application_views.py:381
 msgid "Delete Application API_KEY"
-msgstr "删除应用 API_KEY"
+msgstr "删除智能体 API_KEY"
 
 #: .\apps\application\views\application_views.py:400
 #: .\apps\application\views\application_views.py:401
 msgid "Modify Application AccessToken"
-msgstr "修改应用 AccessToken"
+msgstr "修改智能体 AccessToken"
 
 #: .\apps\application\views\application_views.py:402
 #: .\apps\application\views\application_views.py:419
 msgid "Application/Public Access"
-msgstr "应用/公共访问"
+msgstr "智能体/公共访问"
 
 #: .\apps\application\views\application_views.py:416
 #: .\apps\application\views\application_views.py:417
 msgid "Get the application AccessToken information"
-msgstr "获取应用 AccessToken 信息"
+msgstr "获取智能体 AccessToken 信息"
 
 #: .\apps\application\views\application_views.py:439
 #: .\apps\application\views\application_views.py:440
 msgid "Application Certification"
-msgstr "应用认证"
+msgstr "智能体认证"
 
 #: .\apps\application\views\application_views.py:442
 msgid "Application/Certification"
-msgstr "应用/认证"
+msgstr "智能体/认证"
 
 #: .\apps\application\views\application_views.py:456
 #: .\apps\application\views\application_views.py:457
 msgid "Create an application"
-msgstr "创建应用"
+msgstr "创建智能体"
 
 #: .\apps\application\views\application_views.py:480
 msgid "Hit Test List"
@@ -1851,32 +1851,32 @@ msgstr "命中测试列表"
 #: .\apps\application\views\application_views.py:504
 #: .\apps\application\views\application_views.py:505
 msgid "Publishing an application"
-msgstr "发布应用"
+msgstr "发布智能体"
 
 #: .\apps\application\views\application_views.py:524
 #: .\apps\application\views\application_views.py:525
 msgid "Deleting application"
-msgstr "删除应用"
+msgstr "删除智能体"
 
 #: .\apps\application\views\application_views.py:542
 #: .\apps\application\views\application_views.py:543
 msgid "Modify the application"
-msgstr "修改应用"
+msgstr "修改智能体"
 
 #: .\apps\application\views\application_views.py:560
 #: .\apps\application\views\application_views.py:561
 msgid "Get application details"
-msgstr "获取应用详情"
+msgstr "获取智能体详情"
 
 #: .\apps\application\views\application_views.py:579
 #: .\apps\application\views\application_views.py:580
 msgid "Get the knowledge base available to the current application"
-msgstr "获取当前应用可用的知识库"
+msgstr "获取当前智能体可用的知识库"
 
 #: .\apps\application\views\application_views.py:599
 #: .\apps\application\views\application_views.py:600
 msgid "Get the application list by page"
-msgstr "获取应用列表分页"
+msgstr "获取智能体列表分页"
 
 #: .\apps\application\views\application_views.py:632
 #: .\apps\application\views\application_views.py:633
@@ -1908,12 +1908,12 @@ msgstr "导出对话"
 #: .\apps\application\views\chat_views.py:297
 #: .\apps\application\views\chat_views.py:439
 msgid "Application/Conversation Log"
-msgstr "应用/对话日志"
+msgstr "智能体/对话日志"
 
 #: .\apps\application\views\chat_views.py:68
 #: .\apps\application\views\chat_views.py:69
 msgid "Get the session id according to the application id"
-msgstr "获取应用id对应的会话id"
+msgstr "获取智能体id对应的会话id"
 
 #: .\apps\application\views\chat_views.py:87
 #: .\apps\application\views\chat_views.py:88
@@ -1984,7 +1984,7 @@ msgstr "获取标记段落列表"
 #: .\apps\application\views\chat_views.py:360
 #: .\apps\application\views\chat_views.py:410
 msgid "Application/Conversation Log/Annotation"
-msgstr "应用/对话日志/标注"
+msgstr "智能体/对话日志/标注"
 
 #: .\apps\application\views\chat_views.py:381
 #: .\apps\application\views\chat_views.py:382
@@ -1993,7 +1993,7 @@ msgstr "添加到知识库"
 
 #: .\apps\application\views\chat_views.py:385
 msgid "Application/Conversation Log/Add to Knowledge Base"
-msgstr "应用/对话日志/添加到知识库"
+msgstr "智能体/对话日志/添加到知识库"
 
 #: .\apps\application\views\chat_views.py:406
 #: .\apps\application\views\chat_views.py:407
@@ -2093,11 +2093,11 @@ msgstr "会话"
 
 #: .\apps\common\constants\permission_constants.py:63
 msgid "Only has application dialog interface permissions"
-msgstr "只拥有应用对话接口权限"
+msgstr "只拥有智能体对话接口权限"
 
 #: .\apps\common\constants\permission_constants.py:64
 msgid "Apply private key"
-msgstr "应用私钥"
+msgstr "智能体私钥"
 
 #: .\apps\common\event\__init__.py:25
 msgid "The download process was interrupted, please try again"
@@ -2176,7 +2176,7 @@ msgstr "结束--->嵌入知识库: {dataset_id}"
 
 #: .\apps\common\field\common.py:45
 msgid "not a function"
-msgstr "不是函数"
+msgstr "不是插件"
 
 #: .\apps\common\forms\base_field.py:64
 #, python-brace-format
@@ -2736,13 +2736,13 @@ msgstr "文档"
 #: .\apps\dataset\serializers\dataset_serializers.py:548
 #: .\apps\xpack\serializers\application_setting_serializer.py:70
 msgid "application id"
-msgstr "应用 id"
+msgstr "智能体 id"
 
 #: .\apps\dataset\serializers\dataset_serializers.py:549
 #: .\apps\dataset\serializers\dataset_serializers.py:914
 #: .\apps\dataset\serializers\dataset_serializers.py:915
 msgid "application id list"
-msgstr "应用 id 列表"
+msgstr "智能体 id 列表"
 
 #: .\apps\dataset\serializers\dataset_serializers.py:577
 msgid "search mode"
@@ -2786,7 +2786,7 @@ msgstr "向量化任务发送失败，请稍后再试！"
 #: .\apps\dataset\serializers\dataset_serializers.py:884
 #, python-brace-format
 msgid "Unknown application id {dataset_id}, cannot be associated"
-msgstr "未知的应用id {dataset_id},无法关联"
+msgstr "未知的智能体id {dataset_id},无法关联"
 
 #: .\apps\dataset\serializers\dataset_serializers.py:911
 #: .\apps\dataset\serializers\document_serializers.py:825
@@ -3201,7 +3201,7 @@ msgstr "创建web站点知识库"
 
 #: .\apps\dataset\views\dataset.py:89 .\apps\dataset\views\dataset.py:90
 msgid "Get a list of applications available in the knowledge base"
-msgstr "获取知识库中可用的应用列表"
+msgstr "获取知识库中可用的智能体列表"
 
 #: .\apps\dataset\views\dataset.py:100 .\apps\dataset\views\dataset.py:101
 msgid "Get a list of knowledge bases"
@@ -3542,7 +3542,7 @@ msgstr "变量值"
 #: .\apps\function_lib\swagger_api\py_lint_api.py:22
 #: .\apps\function_lib\swagger_api\py_lint_api.py:23
 msgid "function content"
-msgstr "函数内容"
+msgstr "插件内容"
 
 #: .\apps\function_lib\serializers\function_lib_serializer.py:62
 #: .\apps\function_lib\serializers\function_lib_serializer.py:76
@@ -3555,7 +3555,7 @@ msgstr "函数内容"
 #: .\apps\function_lib\swagger_api\function_lib_api.py:159
 #: .\apps\function_lib\swagger_api\function_lib_api.py:160
 msgid "function name"
-msgstr "函数名"
+msgstr "插件名"
 
 #: .\apps\function_lib\serializers\function_lib_serializer.py:65
 #: .\apps\function_lib\serializers\function_lib_serializer.py:79
@@ -3568,7 +3568,7 @@ msgstr "函数名"
 #: .\apps\function_lib\swagger_api\function_lib_api.py:161
 #: .\apps\function_lib\swagger_api\function_lib_api.py:162
 msgid "function description"
-msgstr "函数描述"
+msgstr "插件描述"
 
 #: .\apps\function_lib\serializers\function_lib_serializer.py:169
 msgid "field has no value set"
@@ -3586,12 +3586,12 @@ msgstr "字段: {name} 类型: {_type} 值: {value} 类型转换错误"
 
 #: .\apps\function_lib\serializers\function_lib_serializer.py:198
 msgid "function id"
-msgstr "函数 id"
+msgstr "插件 id"
 
 #: .\apps\function_lib\serializers\function_lib_serializer.py:204
 #: .\apps\function_lib\serializers\function_lib_serializer.py:227
 msgid "Function does not exist"
-msgstr "函数不存在"
+msgstr "插件不存在"
 
 #: .\apps\function_lib\swagger_api\function_lib_api.py:23
 msgid "ID"
@@ -3624,7 +3624,7 @@ msgstr "来源只支持custom|reference"
 #: .\apps\function_lib\views\function_lib_views.py:26
 #: .\apps\function_lib\views\function_lib_views.py:27
 msgid "Get function list"
-msgstr "获取函数列表"
+msgstr "获取插件列表"
 
 #: .\apps\function_lib\views\function_lib_views.py:28
 #: .\apps\function_lib\views\function_lib_views.py:42
@@ -3635,37 +3635,37 @@ msgstr "获取函数列表"
 #: .\apps\function_lib\views\function_lib_views.py:102
 #: .\apps\function_lib\views\py_lint.py:29
 msgid "Function"
-msgstr "函数"
+msgstr "插件"
 
 #: .\apps\function_lib\views\function_lib_views.py:39
 #: .\apps\function_lib\views\function_lib_views.py:40
 msgid "Create function"
-msgstr "创建函数"
+msgstr "创建插件"
 
 #: .\apps\function_lib\views\function_lib_views.py:51
 #: .\apps\function_lib\views\function_lib_views.py:52
 msgid "Debug function"
-msgstr "调试函数"
+msgstr "调试插件"
 
 #: .\apps\function_lib\views\function_lib_views.py:65
 #: .\apps\function_lib\views\function_lib_views.py:66
 msgid "Update function"
-msgstr "更新函数"
+msgstr "更新插件"
 
 #: .\apps\function_lib\views\function_lib_views.py:76
 #: .\apps\function_lib\views\function_lib_views.py:77
 msgid "Delete function"
-msgstr "删除函数"
+msgstr "删除插件"
 
 #: .\apps\function_lib\views\function_lib_views.py:85
 #: .\apps\function_lib\views\function_lib_views.py:86
 msgid "Get function details"
-msgstr "获取函数详情"
+msgstr "获取插件详情"
 
 #: .\apps\function_lib\views\function_lib_views.py:97
 #: .\apps\function_lib\views\function_lib_views.py:98
 msgid "Get function list by pagination"
-msgstr "获取分页函数列表"
+msgstr "获取分页插件列表"
 
 #: .\apps\function_lib\views\py_lint.py:26
 #: .\apps\function_lib\views\py_lint.py:27
@@ -4449,7 +4449,7 @@ msgstr ""
 msgid ""
 "Ideal for content creation, conversational AI, language understanding, R&D, "
 "and enterprise applications"
-msgstr "非常适合内容创作、会话式人工智能、语言理解、研发和企业应用"
+msgstr "非常适合内容创作、会话式人工智能、语言理解、研发和企业智能体"
 
 #: .\apps\setting\models_provider\impl\aws_bedrock_model_provider\aws_bedrock_model_provider.py:115
 msgid ""
@@ -4922,7 +4922,7 @@ msgid ""
 msgstr ""
 "当前混元模型中效果最优版本，万亿级参数规模 MOE-32K 长文模型。在各种 "
 "benchmark 上达到绝对领先的水平，复杂指令和推理，具备复杂数学能力，支持 "
-"functioncall，在多语言翻译、金融法律医疗等领域应用重点优化"
+"functioncall，在多语言翻译、金融法律医疗等领域智能体重点优化"
 
 #: .\apps\setting\models_provider\impl\tencent_model_provider\tencent_model_provider.py:45
 msgid ""
@@ -5606,11 +5606,11 @@ msgstr "目标 id"
 #: .\apps\setting\serializers\team_serializers.py:82
 #: .\apps\setting\serializers\team_serializers.py:83
 msgid "dataset id/application id"
-msgstr "知识库 id/应用 id"
+msgstr "知识库 id/智能体 id"
 
 #: .\apps\setting\serializers\team_serializers.py:104
 msgid "Non-existent application|knowledge base id["
-msgstr "应用|知识库 id[ 不存在"
+msgstr "智能体|知识库 id[ 不存在"
 
 #: .\apps\setting\serializers\team_serializers.py:138
 #: .\apps\setting\serializers\team_serializers.py:139
@@ -5680,7 +5680,7 @@ msgstr "检查数量"
 #: .\apps\setting\swagger_api\provide_api.py:190
 #: .\apps\setting\swagger_api\provide_api.py:191
 msgid "parameters required to call the function"
-msgstr "调用函数所需要的参数"
+msgstr "调用插件所需要的参数"
 
 #: .\apps\setting\swagger_api\provide_api.py:60
 #: .\apps\setting\swagger_api\provide_api.py:61
@@ -5712,7 +5712,7 @@ msgstr "模型描述"
 
 #: .\apps\setting\swagger_api\provide_api.py:184
 msgid "function that needs to be executed"
-msgstr "需要执行的函数"
+msgstr "需要执行的插件"
 
 #: .\apps\setting\swagger_api\system_setting.py:19
 #: .\apps\setting\swagger_api\system_setting.py:20
@@ -5811,7 +5811,7 @@ msgstr "查询模型详情"
 
 #: .\apps\setting\views\model.py:150 .\apps\setting\views\model.py:151
 msgid "Call the supplier function to obtain form data"
-msgstr "调用供应商函数,获取表单数据"
+msgstr "调用供应商插件,获取表单数据"
 
 #: .\apps\setting\views\model.py:161 .\apps\setting\views\model.py:162
 msgid "Get a list of model suppliers"

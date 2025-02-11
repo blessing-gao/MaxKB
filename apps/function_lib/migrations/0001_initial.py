@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('create_time', models.DateTimeField(auto_now_add=True, verbose_name='创建时间')),
                 ('update_time', models.DateTimeField(auto_now=True, verbose_name='修改时间')),
                 ('id', models.UUIDField(default=uuid.uuid1, editable=False, primary_key=True, serialize=False, verbose_name='主键id')),
-                ('name', models.CharField(max_length=64, verbose_name='函数名称')),
+                ('name', models.CharField(max_length=64, verbose_name='插件名称')),
                 ('desc', models.CharField(max_length=128, verbose_name='描述')),
                 ('code', models.CharField(max_length=102400, verbose_name='python代码')),
                 ('input_field_list', django.contrib.postgres.fields.ArrayField(base_field=models.JSONField(default=dict, verbose_name='输入字段'), default=list, size=None, verbose_name='输入字段列表')),

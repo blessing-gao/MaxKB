@@ -74,7 +74,7 @@ def generate_related_by_document_id(document_id, model_id, prompt):
                                          State.STARTED)
         llm_model = get_llm_model(model_id)
 
-        # 生成问题函数
+        # 生成问题插件
         generate_problem = get_generate_problem(llm_model, prompt,
                                                 ListenerManagement.get_aggregation_document_status(
                                                     document_id), is_the_task_interrupted)
@@ -102,7 +102,7 @@ def generate_related_by_paragraph_id_list(document_id, paragraph_id_list, model_
                                          TaskType.GENERATE_PROBLEM,
                                          State.STARTED)
         llm_model = get_llm_model(model_id)
-        # 生成问题函数
+        # 生成问题插件
         generate_problem = get_generate_problem(llm_model, prompt, ListenerManagement.get_aggregation_document_status(
             document_id))
 

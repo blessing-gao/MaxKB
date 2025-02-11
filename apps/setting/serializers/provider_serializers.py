@@ -401,7 +401,7 @@ class ModelSerializer(serializers.Serializer):
 class ProviderSerializer(serializers.Serializer):
     provider = serializers.CharField(required=True, error_messages=ErrMessage.char(_("provider")))
 
-    method = serializers.CharField(required=True, error_messages=ErrMessage.char("执行函数名称"))
+    method = serializers.CharField(required=True, error_messages=ErrMessage.char("执行插件名称"))
 
     def exec(self, exec_params: Dict[str, object], with_valid=False):
         if with_valid:

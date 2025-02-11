@@ -80,7 +80,7 @@ def has_permissions(*permission, compare=CompareConstants.OR):
     权限 role or permission
     :param compare:    比较符号
     :param permission: 如果是角色 role:roleId
-    :return: 权限装饰器函数,用于判断用户是否有权限访问当前接口
+    :return: 权限装饰器插件,用于判断用户是否有权限访问当前接口
     """
 
     def inner(func):

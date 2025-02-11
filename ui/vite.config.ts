@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
   const prefix = process.env.VITE_DYNAMIC_PREFIX || ENV.VITE_BASE_PATH;
   const proxyConf: Record<string, string | ProxyOptions> = {}
   proxyConf['/api'] = {
-    target: 'http://shenben.club:8888',
+    target: 'http://101.37.166.27:38080',
     changeOrigin: true,
     rewrite: (path) => path.replace(ENV.VITE_BASE_PATH, '/')
   }

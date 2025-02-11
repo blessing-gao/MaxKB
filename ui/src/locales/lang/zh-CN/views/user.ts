@@ -11,11 +11,11 @@ export default {
   },
   delete: {
     confirmTitle: '是否删除用户：',
-    confirmMessage: '删除用户，该用户创建的资源（应用、知识库、模型）都会删除，请谨慎操作。'
+    confirmMessage: '删除用户，该用户创建的资源（智能体、知识库、模型）都会删除，请谨慎操作。'
   },
   disabled: {
-    confirmTitle: '是否禁用函数：',
-    confirmMessage: '禁用后，引用了该函数的应用提问时会报错 ，请谨慎操作。'
+    confirmTitle: '是否禁用插件：',
+    confirmMessage: '禁用后，引用了该插件的智能体提问时会报错 ，请谨慎操作。'
   },
   userForm: {
     form: {

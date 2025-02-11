@@ -19,7 +19,7 @@ from users.models import User
 class AuthTargetType(models.TextChoices):
     """授权目标"""
     DATASET = Group.DATASET.value, '数据集'
-    APPLICATION = Group.APPLICATION.value, '应用'
+    APPLICATION = Group.APPLICATION.value, '智能体'
 
 
 class AuthOperate(models.TextChoices):
@@ -60,7 +60,7 @@ class TeamMemberPermission(AppModelMixin):
     auth_target_type = models.CharField(verbose_name='授权目标', max_length=128, choices=AuthTargetType.choices,
                                         default=AuthTargetType.DATASET)
 
-    target = models.UUIDField(max_length=128, verbose_name="数据集/应用id")
+    target = models.UUIDField(max_length=128, verbose_name="数据集/智能体id")
 
     operate = ArrayField(verbose_name="权限操作列表",
                          base_field=models.CharField(max_length=256,

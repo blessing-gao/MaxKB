@@ -732,7 +732,7 @@ class ApplicationSerializer(serializers.Serializer):
                 function_lib_id_list = [function_lib.get('id') for function_lib in function_lib_list]
                 exits_function_lib_id_list = [str(function_lib.id) for function_lib in
                                               QuerySet(FunctionLib).filter(id__in=function_lib_id_list)]
-                # 获取到需要插入的函数
+                # 获取到需要插入的插件
                 function_lib_list = [function_lib for function_lib in function_lib_list if
                                      not exits_function_lib_id_list.__contains__(function_lib.get('id'))]
             application_model = self.to_application(application, user_id)
