@@ -50,7 +50,7 @@
                   />
                 </div>
 
-                <h4>
+                <h4 class="ellipsis">
                   {{ detail?.name || $t('views.application.applicationForm.form.appName.label') }}
                 </h4>
               </div>
@@ -174,7 +174,7 @@
           <h5 class="mb-8">
             {{ $t('views.applicationOverview.appInfo.SettingDisplayDialog.languageLabel') }}
           </h5>
-          <el-select v-model="form.language">
+          <el-select v-model="form.language" clearable>
             <el-option
               v-for="item in langList"
               :key="item.value"
@@ -398,7 +398,7 @@ const emit = defineEmits(['refresh'])
 
 const defaultSetting = {
   show_source: false,
-  language: 'zh-CN',
+  language: '',
   show_history: true,
   draggable: true,
   show_guide: true,
@@ -427,7 +427,7 @@ const form = ref<any>({
 
 const xpackForm = ref<any>({
   show_source: false,
-  language: 'zh-CN',
+  language: '',
   show_history: false,
   draggable: false,
   show_guide: false,

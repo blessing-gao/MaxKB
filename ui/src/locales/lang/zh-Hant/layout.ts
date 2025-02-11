@@ -11,7 +11,11 @@ export default {
   about: {
     title: '關於',
     expiredTime: '到期時間',
-    edition: '版本',
+    edition: {
+      label: '版本',
+      community: '社群版',
+      professional: '專業版'
+    },
     version: '版本號',
     serialNo: '序列號',
     remark: '備註',
@@ -24,5 +28,7 @@ export default {
     expired: '已過期',
     expiringSoon: '即將到期'
   },
-  copyright: '版權所有 © 2014-2025 杭州飛致雲信息科技有限公司'
+  copyright: '版權所有 © 2014-2025 杭州飛致雲信息科技有限公司',
+  userManualUrl:'https://maxkb.cn/docs/',
+  forumUrl: 'https://github.com/1Panel-dev/MaxKB/discussions'
 }

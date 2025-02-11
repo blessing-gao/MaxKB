@@ -10,12 +10,17 @@ export default {
   about: {
     title: 'About',
     expiredTime: 'Expiration Date',
-    edition: 'Edition',
+    edition: {
+      label: 'Edition',
+      community: 'Community Edition',
+      professional: 'Professional Edition'
+    },
     version: 'Version',
     serialNo: 'Serial No.',
     remark: 'Remarks',
     update: 'Update',
-    authorize: 'Authorized'
+    authorize: 'Authorized',
+    
   },
   time: {
     daysLater: 'days later',
@@ -23,5 +28,7 @@ export default {
     expired: 'expired',
     expiringSoon: 'expiring soon'
   },
-  copyright: 'Copyright © 2014-2025 FIT2CLOUD, All rights reserved.'
+  copyright: 'Copyright © 2014-2025 FIT2CLOUD, All rights reserved.',
+  userManualUrl: 'http://docs.maxkb.hk/',
+  forumUrl: 'https://github.com/1Panel-dev/MaxKB/discussions'
 }
