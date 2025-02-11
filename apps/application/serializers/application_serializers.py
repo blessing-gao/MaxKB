@@ -233,7 +233,7 @@ class ApplicationSerializer(serializers.Serializer):
                                                     error_messages=ErrMessage.boolean(_("Question completion")))
     problem_optimization_prompt = serializers.CharField(required=False, max_length=102400,
                                                         error_messages=ErrMessage.char(_("Question completion prompt")))
-    # 应用类型
+    # 智能体类型
     type = serializers.CharField(required=True, error_messages=ErrMessage.char(_("Application Type")),
                                  validators=[
                                      validators.RegexValidator(regex=re.compile("^SIMPLE|WORK_FLOW$"),
@@ -537,7 +537,7 @@ class ApplicationSerializer(serializers.Serializer):
             application_dataset_mapping_model_list = [
                 ApplicationSerializer.Create.to_application_dataset_mapping(application_model.id, dataset_id) for
                 dataset_id in dataset_id_list]
-            # 插入应用
+            # 插入智能体
             application_model.save()
             # 插入认证信息
             ApplicationAccessToken(application_id=application_model.id,

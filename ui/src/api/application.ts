@@ -8,7 +8,7 @@ import type { FormField } from '@/components/dynamics-form/type'
 const prefix = '/application'
 
 /**
- * 获取全部应用
+ * 获取全部智能体
  * @param 参数
  */
 const getAllAppilcation: () => Promise<Result<any[]>> = () => {
@@ -16,7 +16,7 @@ const getAllAppilcation: () => Promise<Result<any[]>> = () => {
 }
 
 /**
- * 获取分页应用
+ * 获取分页智能体
  * page {
  "current_page": "string",
  "page_size": "string",
@@ -34,7 +34,7 @@ const getApplication: (
 }
 
 /**
- * 创建应用
+ * 创建智能体
  * @param 参数
  */
 const postApplication: (
@@ -45,7 +45,7 @@ const postApplication: (
 }
 
 /**
- * 修改应用
+ * 修改智能体
  * @param 参数
  */
 const putApplication: (
@@ -57,7 +57,7 @@ const putApplication: (
 }
 
 /**
- * 删除应用
+ * 删除智能体
  * @param 参数 application_id
  */
 const delApplication: (
@@ -68,7 +68,7 @@ const delApplication: (
 }
 
 /**
- * 应用详情
+ * 智能体详情
  * @param 参数 application_id
  */
 const getApplicationDetail: (
@@ -79,7 +79,7 @@ const getApplicationDetail: (
 }
 
 /**
- * 获得当前应用可使用的知识库
+ * 获得当前智能体可使用的知识库
  * @param 参数 application_id
  */
 const getApplicationDataset: (
@@ -116,7 +116,7 @@ const putAccessToken: (
 }
 
 /**
- * 应用认证
+ * 智能体认证
  * @param 参数
  {
  "access_token": "string"
@@ -136,7 +136,7 @@ const postAppAuthentication: (
 }
 
 /**
- * 对话获取应用相关信息
+ * 对话获取智能体相关信息
  * @param 参数
  {
  "access_token": "string"
@@ -301,7 +301,7 @@ const getApplicationTTIModel: (
 }
 
 /**
- * 发布应用
+ * 发布智能体
  * @param 参数
  */
 const putPublishApplication: (
@@ -312,8 +312,8 @@ const putPublishApplication: (
   return put(`${prefix}/${application_id}/publish`, data, undefined, loading)
 }
 /**
- * 获取应用所属的插件库列表
- * @param application_id 应用id
+ * 获取智能体所属的插件库列表
+ * @param application_id 智能体id
  * @param loading
  * @returns
  */
@@ -324,8 +324,8 @@ const listFunctionLib: (application_id: String, loading?: Ref<boolean>) => Promi
   return get(`${prefix}/${application_id}/function_lib`, undefined, loading)
 }
 /**
- * 获取当前人的所有应用列表
- * @param application_id 应用id
+ * 获取当前人的所有智能体列表
+ * @param application_id 智能体id
  * @param loading
  * @returns
  */
@@ -336,7 +336,7 @@ export const getApplicationList: (
   return get(`${prefix}/${application_id}/application`, undefined, loading)
 }
 /**
- * 获取应用所属的插件库
+ * 获取智能体所属的插件库
  * @param application_id
  * @param function_lib_id
  * @param loading
@@ -359,7 +359,7 @@ const getApplicationById: (
 }
 /**
  * 获取模型参数表单
- * @param application_id 应用id
+ * @param application_id 智能体id
  * @param model_id      模型id
  * @param loading
  * @returns
@@ -524,7 +524,7 @@ const exportApplication = (
 }
 
 /**
- * 导入应用
+ * 导入智能体
  */
 const importApplication: (data: any, loading?: Ref<boolean>) => Promise<Result<any>> = (
   data,

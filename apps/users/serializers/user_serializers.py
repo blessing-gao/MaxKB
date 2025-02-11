@@ -814,7 +814,7 @@ class UserManageSerializer(serializers.Serializer):
                 member_id__in=[team_member.id for team_member in team_member_list]).delete()
             # 删除团队成员
             team_member_list.delete()
-            # 删除应用相关 因为应用相关都是级联删除所以不需要手动删除
+            # 删除智能体相关 因为智能体相关都是级联删除所以不需要手动删除
             QuerySet(Application).filter(user_id=self.data.get('id')).delete()
             # 删除数据集相关
             dataset_list = QuerySet(DataSet).filter(user_id=self.data.get('id'))

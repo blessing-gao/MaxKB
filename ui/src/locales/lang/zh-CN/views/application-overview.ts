@@ -1,7 +1,7 @@
 export default {
   title: '概览',
   appInfo: {
-    header: '应用信息',
+    header: '智能体信息',
     publicAccessLink: '公开访问链接',
     openText: '开',
     closeText: '关',
@@ -28,7 +28,7 @@ export default {
       disabledSuccess: '已禁用'
     },
     EditAvatarDialog: {
-      title: '应用头像',
+      title: '智能体头像',
       customizeUpload: '自定义上传',
       upload: '上传',
       default: '默认logo',

@@ -40,7 +40,7 @@ const { log } = useStore()
 const props = withDefaults(
   defineProps<{
     /**
-     * 应用信息
+     * 智能体信息
      */
     application?: ApplicationFormType
     /**

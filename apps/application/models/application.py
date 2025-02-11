@@ -46,7 +46,7 @@ def get_model_setting_dict():
 
 class Application(AppModelMixin):
     id = models.UUIDField(primary_key=True, max_length=128, default=uuid.uuid1, editable=False, verbose_name="主键id")
-    name = models.CharField(max_length=128, verbose_name="应用名称")
+    name = models.CharField(max_length=128, verbose_name="智能体名称")
     desc = models.CharField(max_length=512, verbose_name="引用描述", default="")
     prologue = models.CharField(max_length=40960, verbose_name="开场白", default="")
     dialogue_number = models.IntegerField(default=0, verbose_name="会话数量")
@@ -57,9 +57,9 @@ class Application(AppModelMixin):
     model_params_setting = models.JSONField(verbose_name="模型参数相关设置", default=dict)
     tts_model_params_setting = models.JSONField(verbose_name="模型参数相关设置", default=dict)
     problem_optimization = models.BooleanField(verbose_name="问题优化", default=False)
-    icon = models.CharField(max_length=256, verbose_name="应用icon", default="/ui/favicon.ico")
+    icon = models.CharField(max_length=256, verbose_name="智能体icon", default="/ui/favicon.ico")
     work_flow = models.JSONField(verbose_name="工作流数据", default=dict)
-    type = models.CharField(verbose_name="应用类型", choices=ApplicationTypeChoices.choices,
+    type = models.CharField(verbose_name="智能体类型", choices=ApplicationTypeChoices.choices,
                             default=ApplicationTypeChoices.SIMPLE, max_length=256)
     problem_optimization_prompt = models.CharField(verbose_name="问题优化提示词", max_length=102400, blank=True,
                                                    null=True,

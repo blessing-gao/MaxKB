@@ -4,7 +4,7 @@
     @Author：虎
     @file： authenticate.py
     @date：2024/3/14 03:02
-    @desc:  应用api key认证
+    @desc:  智能体api key认证
 """
 from django.db.models import QuerySet
 

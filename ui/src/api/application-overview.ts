@@ -68,7 +68,7 @@ const getStatistics: (
 }
 
 /**
- * 修改应用icon
+ * 修改智能体icon
  * @param 参数 application_id
  * data: file
  */

@@ -38,7 +38,7 @@ class UserToken(AuthBaseHandle):
         token_cache.touch(token, timeout=JWT_AUTH['JWT_EXPIRATION_DELTA'].total_seconds())
         rule = RoleConstants[user.role]
         permission_list = get_permission_list_by_role(RoleConstants[user.role])
-        # 获取用户的应用和知识库的权限
+        # 获取用户的智能体和知识库的权限
         permission_list += get_user_dynamics_permission(str(user.id))
         return user, Auth(role_list=[rule],
                           permission_list=permission_list,

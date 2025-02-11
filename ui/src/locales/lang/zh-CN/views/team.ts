@@ -11,7 +11,7 @@ export default {
   delete: {
     button: '移除',
     confirmTitle: '是否移除成员：',
-    confirmMessage: '移除后将会取消成员拥有的知识库和应用权限。'
+    confirmMessage: '移除后将会取消成员拥有的知识库和智能体权限。'
   },
   setting: {
     management: '管理',

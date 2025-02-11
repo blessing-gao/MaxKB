@@ -11,13 +11,13 @@ const applicationRouter = {
     {
       path: '/application',
       name: 'application-index',
-      meta: { title: '应用主页', activeMenu: '/application' },
+      meta: { title: '智能体主页', activeMenu: '/application' },
       component: () => import('@/views/application/index.vue')
     },
     {
       path: '/application/:id/:type',
       name: 'ApplicationDetail',
-      meta: { title: '应用详情', activeMenu: '/application' },
+      meta: { title: '智能体详情', activeMenu: '/application' },
       component: Layout,
       hidden: true,
       children: [

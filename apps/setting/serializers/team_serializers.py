@@ -266,7 +266,7 @@ class TeamMemberSerializer(ApiMixin, serializers.Serializer):
                 self.is_valid(raise_exception=True)
             team_id = self.data.get('team_id')
             member_id = self.data.get("member_id")
-            # 查询当前团队成员所有的知识库和应用的权限 注意 operate为null是为设置权限 默认值都是false
+            # 查询当前团队成员所有的知识库和智能体的权限 注意 operate为null是为设置权限 默认值都是false
             member_permission_list = select_list(
                 get_file_content(os.path.join(PROJECT_DIR, "apps", "setting", 'sql', 'get_member_permission.sql')),
                 [team_id, team_id, (member_id if member_id != 'root' else uuid.uuid1())])

@@ -137,7 +137,7 @@ const putDataset: (
   return put(`${prefix}/${dataset_id}`, data, undefined, loading)
 }
 /**
- * 获取知识库 可关联的应用列表
+ * 获取知识库 可关联的智能体列表
  * @param dataset_id
  * @param loading
  * @returns

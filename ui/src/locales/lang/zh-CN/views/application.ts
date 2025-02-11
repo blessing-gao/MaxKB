@@ -34,7 +34,7 @@ export default {
       },
       appDescription: {
         label: '智能体描述',
-        placeholder: '描述该智能体的应用场景及用途，如：XXX 小助手回答用户提出的 XXX 产品使用问题'
+        placeholder: '描述该智能体的智能体场景及用途，如：XXX 小助手回答用户提出的 XXX 产品使用问题'
       },
       appType: {
         label: '选择智能体类型',
@@ -141,7 +141,7 @@ export default {
     }
   },
   applicationAccess: {
-    title: '应用接入',
+    title: '智能体接入',
     wecom: '企业微信应用',
     wecomTip: '打造企业微信智能应用',
     dingtalk: '钉钉应用',

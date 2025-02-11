@@ -3,9 +3,9 @@ export default {
   createDataset: '创建知识库',
   general: '通用型',
   web: 'web 站点',
-  relatedApplications: '关联应用',
+  relatedApplications: '关联智能体',
   document_count: '文档数',
-  relatedApp_count: '关联应用',
+  relatedApp_count: '关联智能体',
   searchBar: {
     placeholder: '按名称搜索'
   },
@@ -21,7 +21,7 @@ export default {
   delete: {
     confirmTitle: '是否删除知识库：',
     confirmMessage1: '此知识库关联',
-    confirmMessage2: '个应用，删除后无法恢复，请谨慎操作。'
+    confirmMessage2: '个智能体，删除后无法恢复，请谨慎操作。'
   },
 
   datasetForm: {
@@ -32,7 +32,7 @@ export default {
       datasetName: {
         label: '知识库名称',
         placeholder: '请输入知识库名称',
-        requiredMessage: '请输入应用名称'
+        requiredMessage: '请输入智能体名称'
       },
       datasetDescription: {
         label: '知识库描述',

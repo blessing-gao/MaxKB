@@ -54,7 +54,7 @@ class ChatInfo:
         :param chat_id:                     对话id
         :param dataset_id_list:             数据集列表
         :param exclude_document_id_list:    排除的文档
-        :param application:                 应用信息
+        :param application:                 智能体信息
         """
         self.chat_id = chat_id
         self.application = application

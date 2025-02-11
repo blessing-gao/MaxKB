@@ -333,7 +333,7 @@ class ModelSerializer(serializers.Serializer):
             if model.model_type == 'LLM':
                 application_count = Application.objects.filter(model_id=model_id).count()
                 if application_count > 0:
-                    raise AppApiException(500, f"该模型关联了{application_count} 个应用，无法删除该模型。")
+                    raise AppApiException(500, f"该模型关联了{application_count} 个智能体，无法删除该模型。")
             elif model.model_type == 'EMBEDDING':
                 dataset_count = DataSet.objects.filter(embedding_mode_id=model_id).count()
                 if dataset_count > 0:
@@ -341,11 +341,11 @@ class ModelSerializer(serializers.Serializer):
             elif model.model_type == 'TTS':
                 dataset_count = Application.objects.filter(tts_model_id=model_id).count()
                 if dataset_count > 0:
-                    raise AppApiException(500, f"该模型关联了{dataset_count} 个应用，无法删除该模型。")
+                    raise AppApiException(500, f"该模型关联了{dataset_count} 个智能体，无法删除该模型。")
             elif model.model_type == 'STT':
                 dataset_count = Application.objects.filter(stt_model_id=model_id).count()
                 if dataset_count > 0:
-                    raise AppApiException(500, f"该模型关联了{dataset_count} 个应用，无法删除该模型。")
+                    raise AppApiException(500, f"该模型关联了{dataset_count} 个智能体，无法删除该模型。")
             model.delete()
             return True
 

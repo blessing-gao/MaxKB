@@ -28,7 +28,7 @@ export default {
     onlyRight: '只允许从右边的锚点连出',
     notRecyclable: '不可循环连线',
     onlyLeft: '只允许连接左边的锚点',
-    applicationNodeError: '该应用不可用',
+    applicationNodeError: '该智能体不可用',
     functionNodeError: '该插件不可用',
     repeatedNodeError: '节点名称已存在！',
     cannotCopy: '不能被复制',
@@ -83,11 +83,11 @@ export default {
     baseNode: {
       label: '基本信息',
       appName: {
-        label: '应用名称',
+        label: '智能体名称',
     
       },
       appDescription: {
-        label: '应用描述',
+        label: '智能体描述',
        },
       fileUpload: {
         label: '文件上传',
@@ -255,7 +255,7 @@ export default {
       text: '通过执行自定义脚本，实现数据处理'
     },
     applicationNode: {
-      label: '应用节点'
+      label: '智能体节点'
     }
   },
   compare: {

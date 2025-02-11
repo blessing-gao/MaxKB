@@ -6325,7 +6325,7 @@ msgstr "微信公众号：{account}"
 msgid ""
 "The app does not enable the speech-to-text function or the speech-to-text "
 "function fails."
-msgstr "应用未开启语音转文字功能或语音转文字功能失败。"
+msgstr "智能体未开启语音转文字功能或语音转文字功能失败。"
 
 #: .\apps\xpack\serializers\channel\wechat.py:175
 msgid "Message types not supported yet"
@@ -6689,17 +6689,17 @@ msgstr ""
 #: .\apps\xpack\views\application_setting_views.py:21
 #: .\apps\xpack\views\application_setting_views.py:22
 msgid "Pro/Modify Application Settings"
-msgstr "专业版/修改应用设置"
+msgstr "专业版/修改智能体设置"
 
 #: .\apps\xpack\views\application_setting_views.py:23
 #: .\apps\xpack\views\application_setting_views.py:38
 msgid "Pro/Application/Public Access"
-msgstr "专业版/应用/公共访问"
+msgstr "专业版/智能体/公共访问"
 
 #: .\apps\xpack\views\application_setting_views.py:35
 #: .\apps\xpack\views\application_setting_views.py:36
 msgid "Pro/Get Application Settings"
-msgstr "专业版/获取应用详情"
+msgstr "专业版/获取智能体详情"
 
 #: .\apps\xpack\views\auth.py:28
 msgid "Authentication"
@@ -6805,7 +6805,7 @@ msgstr "获取平台配置"
 
 #: .\apps\xpack\views\platform.py:49 .\apps\xpack\views\platform.py:57
 msgid "Application/application access"
-msgstr "应用/应用访问"
+msgstr "智能体/智能体访问"
 
 #: .\apps\xpack\views\platform.py:53 .\apps\xpack\views\platform.py:54
 msgid "Update platform configuration"
@@ -6817,7 +6817,7 @@ msgstr "获取平台状态"
 
 #: .\apps\xpack\views\platform.py:76
 msgid "Application/Get platform status"
-msgstr "应用/获取平台状态"
+msgstr "智能体/获取平台状态"
 
 #: .\apps\xpack\views\platform.py:86 .\apps\xpack\views\platform.py:87
 msgid "Update platform status"
@@ -6825,7 +6825,7 @@ msgstr "更新平台状态"
 
 #: .\apps\xpack\views\platform.py:93
 msgid "Application/Update platform status"
-msgstr "应用/更新平台状态"
+msgstr "智能体/更新平台状态"
 
 #: .\apps\xpack\views\system_api_key_views.py:27
 #: .\apps\xpack\views\system_api_key_views.py:28

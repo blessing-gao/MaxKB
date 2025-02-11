@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ('create_time', models.DateTimeField(auto_now_add=True, verbose_name='创建时间')),
                 ('update_time', models.DateTimeField(auto_now=True, verbose_name='修改时间')),
                 ('id', models.UUIDField(default=uuid.uuid1, editable=False, primary_key=True, serialize=False, verbose_name='主键id')),
-                ('name', models.CharField(max_length=128, verbose_name='应用名称')),
+                ('name', models.CharField(max_length=128, verbose_name='智能体名称')),
                 ('desc', models.CharField(default='', max_length=512, verbose_name='引用描述')),
                 ('prologue', models.CharField(default='', max_length=1024, verbose_name='开场白')),
                 ('dialogue_number', models.IntegerField(default=0, verbose_name='会话数量')),
@@ -56,7 +56,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('create_time', models.DateTimeField(auto_now_add=True, verbose_name='创建时间')),
                 ('update_time', models.DateTimeField(auto_now=True, verbose_name='修改时间')),
-                ('application', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, primary_key=True, serialize=False, to='application.application', verbose_name='应用id')),
+                ('application', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, primary_key=True, serialize=False, to='application.application', verbose_name='智能体id')),
                 ('access_token', models.CharField(max_length=128, unique=True, verbose_name='用户公开访问 认证token')),
                 ('is_active', models.BooleanField(default=True, verbose_name='是否开启公开访问')),
                 ('access_num', models.IntegerField(default=100, verbose_name='访问次数')),

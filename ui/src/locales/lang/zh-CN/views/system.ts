@@ -128,7 +128,7 @@ export default {
     showProject: '显示项目地址',
     urlPlaceholder: '请输入 URL 地址',
     abandonUpdate: '放弃更新',
-    saveAndApply: '保存并应用',
+    saveAndApply: '保存并智能体',
     fileMessageError: '文件大小超过 10M',
     saveSuccess: '外观设置成功'
   },

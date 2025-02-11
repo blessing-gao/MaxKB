@@ -142,7 +142,7 @@ WSGI_APPLICATION = 'smartdoc.wsgi.application'
 # 邮件配置
 EMAIL_ADDRESS = CONFIG.get('EMAIL_ADDRESS')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = CONFIG.get('EMAIL_USE_TLS')  # 是否使用TLS安全传输协议(用于在两个通信应用程序之间提供保密性和数据完整性。)
+EMAIL_USE_TLS = CONFIG.get('EMAIL_USE_TLS')  # 是否使用TLS安全传输协议(用于在两个通信智能体程序之间提供保密性和数据完整性。)
 EMAIL_USE_SSL = CONFIG.get('EMAIL_USE_SSL')  # 是否使用SSL加密，qq企业邮箱要求使用
 EMAIL_HOST = CONFIG.get('EMAIL_HOST')  # 发送邮件的邮箱 的 SMTP服务器，这里用了163邮箱
 EMAIL_PORT = CONFIG.get('EMAIL_PORT')  # 发件箱的SMTP服务器端口

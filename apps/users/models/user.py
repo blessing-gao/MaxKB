@@ -53,9 +53,9 @@ def to_dynamics_permission(group_type: str, operate: list[str], dynamic_tag: str
 
 def get_user_dynamics_permission(user_id: str):
     """
-    获取 应用和数据集权限
+    获取 智能体和数据集权限
     :param user_id: 用户id
-    :return: 用户 应用和数据集权限
+    :return: 用户 智能体和数据集权限
     """
     member_permission_list = select_list(
         get_file_content(os.path.join(PROJECT_DIR, "apps", "setting", 'sql', 'get_user_permission.sql')),

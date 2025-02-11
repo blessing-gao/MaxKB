@@ -77,7 +77,7 @@ const { application } = useStore()
 
 const route = useRoute()
 const {
-  params: { id } //应用id
+  params: { id } //智能体id
 } = route
 
 const emit = defineEmits(['refresh'])
