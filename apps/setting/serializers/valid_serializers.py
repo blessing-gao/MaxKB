@@ -41,15 +41,15 @@ class ValidSerializer(serializers.Serializer):
     valid_count = serializers.IntegerField(required=True, error_messages=ErrMessage.integer(_('check quantity')))
 
     def valid(self, is_valid=True):
-        if is_valid:
-            self.is_valid(raise_exception=True)
-        model_value = model_message_dict.get(self.data.get('valid_type'))
-        xpack_cache = DBModelManage.get_model('xpack_cache')
-        is_license_valid = xpack_cache.get('XPACK_LICENSE_IS_VALID', False) if xpack_cache is not None else False
-        if not is_license_valid:
-            if self.data.get('valid_count') != model_value.get('count'):
-                raise AppApiException(400, model_value.get('message'))
-            if QuerySet(
-                    model_value.get('model')).count() >= model_value.get('count'):
-                raise AppApiException(400, model_value.get('message'))
+        # if is_valid:
+        #     self.is_valid(raise_exception=True)
+        # model_value = model_message_dict.get(self.data.get('valid_type'))
+        # xpack_cache = DBModelManage.get_model('xpack_cache')
+        # is_license_valid = xpack_cache.get('XPACK_LICENSE_IS_VALID', False) if xpack_cache is not None else False
+        # if not is_license_valid:
+        #     if self.data.get('valid_count') != model_value.get('count'):
+        #         raise AppApiException(400, model_value.get('message'))
+        #     if QuerySet(
+        #             model_value.get('model')).count() >= model_value.get('count'):
+        #         raise AppApiException(400, model_value.get('message'))
         return True

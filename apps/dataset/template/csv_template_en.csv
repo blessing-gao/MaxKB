@@ -1,8 +1,10 @@
-Section title (optional), Section content (required, question answer, no more than 4096 characters)), question (optional, one per line in the cell)
-MaxKB product introduction, "MaxKB is a knowledge base question and answer system based on the LLM large language model. MaxKB = Max Knowledge Base aims to become the most powerful brain of the enterprise.
-Out-of-the-box: Supports direct uploading of documents, automatic crawling of online documents, automatic text splitting and vectorization, and a good intelligent Q&A interactive experience;
-Seamless embedding: Supports rapid embedding into third-party business systems with zero coding;
-Multi-model support: Supports docking with mainstream large models, including Ollama local private large models (such as Llama 2, Llama 3, qwen), Tongyi Qianwen, OpenAI, Azure OpenAI, Kimi, Zhipu AI, iFlytek Spark and Baidu Qianfan Large models etc. ","What is MaxKB?
-MaxKB product introduction
-Large language model supported by MaxKB
-MaxKB advantages"
+分段标题（选填）,分段内容（必填，问题答案，最长不超过4096个字符）,问题（选填，单元格内一行一个）
+WF产品介绍,"WF 是一款基于 LLM 大语言模型的知识库问答系统。
+开箱即用：支持直接上传文档、自动爬取在线文档，支持文本自动拆分、向量化，智能问答交互体验好；
+无缝嵌入：支持零编码快速嵌入到第三方业务系统；
+多模型支持：支持对接主流的大模型，包括 Ollama 本地私有大模型（如 Llama 2、Llama 3、qwen）、通义千问、OpenAI、Azure OpenAI、Kimi、智谱 AI、讯飞星火和百度千帆大模型等。","WF是什么？
+WF产品介绍
+WF支持的大语言模型
+WF优势
+"
+,,
